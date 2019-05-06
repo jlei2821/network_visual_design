@@ -1,0 +1,139 @@
+---
+title: "Project Presentation - Group 4"
+subtitle: "(Social Butterfly)"
+author: "Bala Kuppusamy, Minglan Ye, Jiamin Lei"
+date: "2019/05/06"
+output:
+  xaringan::moon_reader: default
+  html_document: default
+  pdf_document: default
+---
+<!-- name: domain-problem -->
+<!-- class: middle, middle -->
+
+<!-- #Project Presentation - Group 4 -->
+
+<!-- ####Bala Kuppusamy, Minglan Ye, Jiamin Lei -->
+<!-- #####(Social Butterfly) -->
+
+<!-- ####Date: 2019/05/06 -->
+
+<!-- --- -->
+<img src="https://cdn-images-1.medium.com/max/1000/1*IWxOuXB3csN4_na6SSm_Rg.gif" alt="busy" width="750", height="550"/>
+---
+
+name: domain-problem
+class: left, top
+
+# Domain Problem
+
+- 
+
+Dataset contains school friends network data in a High school in Marseille, France.
+--
+
+- Research Question & Domain Problem
+
+--
+
+  - Calculate Social Network Analysis measures for each individual.
+  
+--
+
+  - As freshmen or transfer students in a new school, students could utilize this application to get to know the classmates to have a better school experience. (Know Your Classmate)
+  
+--
+
+  - Students can visualize the relationship between each individual through what class they are taking, who are they connected to, etc.
+
+--
+
+<img src="https://thumbs.gfycat.com/InsidiousPhonyBlackbear-size_restricted.gif" alt="busy" width="250", height="175"/><font color="orange">
+<= My first day of school! :)
+</font>
+
+---
+name:definition of centrality, closesness, betweenness
+class:left, top
+
+# Helpful Definitions
+
+- **Degree**: How many direct, 'one hop' connections each node has to other nodes within the network. *Very connected individuals, popular individuals.*
+
+--
+
+- **Eigen Centrality**: How well connected a node is, and how many links their connections have, and so on through the network. *A good ‘all-round’ SNA score.*
+
+--
+
+- **Closeness**: Measures ‘closeness’ to all other nodes within the network. Calculates shortest paths between all nodes, then assigns each node a score based on its sum of shortest paths. *Individuals who are best placed to influence the entire network most quickly. Good ‘broadcasters’.*
+
+--
+
+- **Betweeness**: Measures number of times a node lies on the shortest path between other nodes. This measure shows which nodes act as 'bridges' between nodes in a network. *Individuals who influence the flow around a system.*
+
+
+Reference: [link](https://cambridge-intelligence.com/keylines-faqs-social-network-analysis/)
+
+---
+
+---
+name:Goal & Objectives
+
+#Goal & Objectives
+
+--
+
+- Meet new people / friends / future date
+
+--
+
+- Learn more about other students and get to know your classmates
+
+--
+- New skills, inspiration, collaboration on school projects
+
+--
+
+- Food / encounter more cuisines and culture
+
+--
+
+- Networking aka build relationships
+
+<img src="https://cdn-images-1.medium.com/max/1200/1*oqC2418qR3teriHPIVIvhg.png" alt="busy" width="350", height="250"/>
+---
+name: dashboard
+
+# Visual Dashboard
+
+##### Libraries used
+
+--
+
+- visNetwork, igraph, tidyverse, jsonlite, curl
+
+--
+
+- shiny, shinydashboardPlus, xaringan, xaringan themes
+
+--
+
+<img src="https://media.tenor.com/images/172b78aa15e620b11fe309828af3c757/tenor.gif" alt="busy" width="300", height="205"/><font color="orange">
+<= Networking is hard! :)
+</font>
+
+--
+
+<br />
+https://balavigneswaran-kuppusamy.shinyapps.io/network/
+
+---
+<img src="https://media.giphy.com/media/MiapFHASKG1Us/giphy.gif" alt="busy" width="750", height="550"/>
+
+---
+name: thanks
+count: false
+class: center, middle
+
+# Thank You!

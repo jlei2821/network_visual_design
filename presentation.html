@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Project Presentation - Group 4</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Bala Kuppusamy, Minglan Ye, Jiamin Lei" />
+    <link href="presentation_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="presentation_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Project Presentation - Group 4
+## (Social Butterfly)
+### Bala Kuppusamy, Minglan Ye, Jiamin Lei
+### 2019/05/06
+
+---
+
+&lt;!-- name: domain-problem --&gt;
+&lt;!-- class: middle, middle --&gt;
+
+&lt;!-- #Project Presentation - Group 4 --&gt;
+
+&lt;!-- ####Bala Kuppusamy, Minglan Ye, Jiamin Lei --&gt;
+&lt;!-- #####(Social Butterfly) --&gt;
+
+&lt;!-- ####Date: 2019/05/06 --&gt;
+
+&lt;!-- --- --&gt;
+&lt;img src="https://cdn-images-1.medium.com/max/1000/1*IWxOuXB3csN4_na6SSm_Rg.gif" alt="busy" width="750", height="550"/&gt;
+---
+
+name: domain-problem
+class: left, top
+
+# Domain Problem
+
+- 
+
+Dataset contains school friends network data in a US high school in December 2013.
+--
+
+- Research Question &amp; Domain Problem
+
+--
+
+  - Calculate Social Network Analysis measures for each individual.
+  
+--
+
+  - As freshmen or transfer students in a new school, students could utilize this application to get to know the classmates to have a better school experience. (Know Your Classmate)
+  
+--
+
+  - Students can visualize the relationship between each individual through what class they are taking, who are they connected to, etc.
+
+--
+
+&lt;img src="https://thumbs.gfycat.com/InsidiousPhonyBlackbear-size_restricted.gif" alt="busy" width="250", height="175"/&gt;&lt;font color="orange"&gt;
+&lt;= My first day of school! :)
+&lt;/font&gt;
+
+---
+name:definition of centrality, closesness, betweenness
+class:left, top
+
+# Helpful Definitions
+
+- **Degree**: How many direct, 'one hop' connections each node has to other nodes within the network. *Very connected individuals, popular individuals.*
+
+--
+
+- **Eigen Centrality**: How well connected a node is, and how many links their connections have, and so on through the network. *A good ‘all-round’ SNA score.*
+
+--
+
+- **Closeness**: Measures ‘closeness’ to all other nodes within the network. Calculates shortest paths between all nodes, then assigns each node a score based on its sum of shortest paths. *Individuals who are best placed to influence the entire network most quickly. Good ‘broadcasters’.*
+
+--
+
+- **Betweeness**: Measures number of times a node lies on the shortest path between other nodes. This measure shows which nodes act as 'bridges' between nodes in a network. *Individuals who influence the flow around a system.*
+
+
+Reference: [link](https://cambridge-intelligence.com/keylines-faqs-social-network-analysis/)
+
+---
+
+---
+name:Goal &amp; Objectives
+
+#Goal &amp; Objectives
+
+--
+
+- Meet new people / friends / future date
+
+--
+
+- Learn more about other students and get to know your classmates
+
+--
+- New skills, inspiration, collaboration on school projects
+
+--
+
+- Food / encounter more cuisines and culture
+
+--
+
+- Networking aka build relationships
+
+&lt;img src="https://cdn-images-1.medium.com/max/1200/1*oqC2418qR3teriHPIVIvhg.png" alt="busy" width="350", height="250"/&gt;
+---
+name: dashboard
+
+# Visual Dashboard
+
+##### Libraries used
+
+--
+
+- visNetwork, igraph, tidyverse, jsonlite, curl
+
+--
+
+- shiny, shinydashboardPlus, xaringan, xaringan themes
+
+--
+
+&lt;img src="https://media.tenor.com/images/172b78aa15e620b11fe309828af3c757/tenor.gif" alt="busy" width="300", height="205"/&gt;&lt;font color="orange"&gt;
+&lt;= Networking is hard! :)
+&lt;/font&gt;
+
+--
+
+&lt;br /&gt;
+https://balavigneswaran-kuppusamy.shinyapps.io/network/
+
+---
+&lt;img src="https://media.giphy.com/media/MiapFHASKG1Us/giphy.gif" alt="busy" width="750", height="550"/&gt;
+
+---
+name: thanks
+count: false
+class: center, middle
+
+# Thank You!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
